@@ -42,3 +42,8 @@ What are Queues?
 		- also heavy with the re-index 
 - linked list implementation  
 	- lighter weight
+- Big O
+    - insertion O(1)
+    - removal O(1)
+    - searching O(n)
+    - access O(n)
