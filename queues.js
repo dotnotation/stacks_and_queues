@@ -11,4 +11,21 @@ class Queue {
         this.last = null
         this.size = 0
     }
+
+    enqueue(val){
+        // create a new node with val
+        // if no nodes, set the new node node to be first and last property
+        // else set the next property on the current last to be the new node
+        // set the last property to be new node
+        let newNode = new Node(val)
+
+        if (!this.first){
+            this.first = newNode
+            this.last = newNode
+        } else {
+            this.last.next = newNode 
+            this.last = newNode
+        }
+        return ++this.size
+    }
 }
