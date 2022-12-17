@@ -19,5 +19,16 @@ class Stack {
         // reset the first property to be the new node
         // set the next property to be the previously created variable
         // increment the size of the stack by 1
+        let newNode = new Node(val)
+        
+        if (!this.first){
+            this.first = newNode
+            this.last = newNode
+        } else {
+            let firstNode = this.first
+            this.first = newNode
+            this.first.next = firstNode
+        }
+        return ++this.size
     }
 }
