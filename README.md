@@ -21,9 +21,15 @@ What is a stack?
 	- can use `.unshift()`  and `.shift()`
 		- however this is more cost heavy because everything has to be re-indexed every time  
         - also note that you can either use `push` and `pop` OR `unshift` and `shift` 
-- linked list implementation 
-_ Big O
+- linked list implementation
+    - see stack.js
+- Big O
     - push and pop O(1) 
+    - insertion O(1)
+    - removal O(1)
+    - searching O(n)
+    - access O(n)
+        - if access and searching are a priority than you should be using an array
 
 What are Queues?
 - First in first out (FIFO) data structure
