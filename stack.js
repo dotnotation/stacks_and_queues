@@ -42,14 +42,12 @@ class Stack {
 
         if (this.size === 0) return null
 
-        if (this.size === 1){
-            this.first = null
+        if (this.first === this.last){
             this.last = null
-        } else {
-            let firstNode = this.first
-            this.first = firstNode.next
-        }
+        } 
+        let firstNode = this.first
+        this.first = firstNode.next
         this.size-- 
-        return firstNode
+        return firstNode.val
     }
 }
