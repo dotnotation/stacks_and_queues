@@ -31,4 +31,25 @@ class Stack {
         }
         return ++this.size
     }
+
+    pop(){
+        // if no nodes, return null
+        // variable to store the first property on the stack
+        // if only 1 node, set the first and last to be null
+        // else set the first property to be the next property on the current first
+        // decrease size by 1 
+        // return the value of the node removed 
+
+        if (this.size === 0) return null
+
+        if (this.size === 1){
+            this.first = null
+            this.last = null
+        } else {
+            let firstNode = this.first
+            this.first = firstNode.next
+        }
+        this.size-- 
+        return firstNode
+    }
 }
