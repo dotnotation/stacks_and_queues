@@ -33,3 +33,12 @@ What is a stack?
 
 What are Queues?
 - First in first out (FIFO) data structure
+- adding and removing 
+- array implementation 
+	- `var queue = []` 
+	- can use `push` and  `shift` 
+		- heavy to use because of having to re-index
+	- can use `unshift` and `pop` 
+		- also heavy with the re-index 
+- linked list implementation  
+	- lighter weight
